@@ -1,0 +1,79 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "obsidian-git:open-git-view",
+      "icon": "lucide-git-pull-request",
+      "name": "Git: Open source control view",
+      "mode": "any",
+      "color": "#0064ff"
+    },
+    {
+      "id": "obsidian-git:view-file-on-github",
+      "icon": "lucide-github",
+      "name": "Git: Open file on GitHub",
+      "mode": "any",
+      "color": "#0096ff"
+    },
+    {
+      "id": "switcher:open",
+      "icon": "lucide-file-search",
+      "name": "Quick switcher: Open quick switcher",
+      "mode": "any",
+      "color": "#6400ff"
+    },
+    {
+      "id": "graph:open",
+      "icon": "lucide-git-fork",
+      "name": "Graph view: Open graph view",
+      "mode": "any",
+      "color": "#0000ff"
+    },
+    {
+      "id": "canvas:new-file",
+      "icon": "lucide-layout-dashboard",
+      "name": "Canvas: Create new canvas",
+      "mode": "any",
+      "color": "#0032ff"
+    },
+    {
+      "id": "file-explorer:open",
+      "icon": "lucide-files",
+      "name": "Files: Show file explorer",
+      "mode": "any",
+      "color": "#9600ff"
+    },
+    {
+      "id": "command-palette:open",
+      "icon": "lucide-terminal-square",
+      "name": "Command palette: Open command palette",
+      "mode": "any",
+      "color": "#3200ff"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": []
+  },
+  "spacing": 8,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}
