@@ -35,7 +35,7 @@ Equally there is another way to write all the values at once during the definiti
 int numAr[5] = {11, 12, 13, 14, 15};
 ```
 **Only in this manner**, if no value is given inside the braces (`[]`) with the name of array the compiler will automatically deduce the size based on the number of values given. Although same goes for defining array as an argument for a function since there is no straight forward way to know what length of array a function is going to receive.
-[[3) Arrays]]
+[[3)Arrays]]
 
 ---
 # Strings
@@ -44,7 +44,7 @@ A String is an array of characters. Ending of an array is defined by null charac
 There is a standard library in C called `string.h` that provides us with useful function to work with strings in c.
 ### `strlen()`
 `strlen()` function takes a string as an input and returns it's length has an output.
-[[5) Strings]]
+[[5)Strings]]
 
 ---
 # Command-line arguments

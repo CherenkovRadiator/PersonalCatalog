@@ -40,7 +40,7 @@ Now a new structure variable can be created simply using the new name defined li
 ```c
 new_data_type_name struc1;
 ```
-[[10) Structures]]
+[[10)Structures]]
 
 ---
 # Sorting
@@ -56,6 +56,6 @@ Merger sort is on the order of nlogn (*O(nlogn)*) i.e it is faster compared to *
 # Recursion
 Recursion occurs when a functions calls itself, creating a loop. This allows to solve a problem using the same logic in itself.
 Note that in recursion a base condition is need so that the recursion won't go on forever. The base condition defines the condition in which the the recursion will stop.
-[[13) Recursion]]
+[[13)Recursion]]
 
 ---

@@ -18,7 +18,7 @@ While pointers are used to store memory addresses the value of that address can 
 ```c
 printf("The value of num is %i", *numPtr);
 ```
-[[9) Pointers]]
+[[9)Pointers]]
 
 ---
 # Strings
@@ -33,7 +33,7 @@ typedef char *string;
 string name  = "David";
 printf("The name is %s", name);
 ```
-[[12) Arrays and Pointers]]
+[[12)ArraysAndPointers]]
 
 ---
 # Pointer Arithmetic
@@ -57,7 +57,7 @@ int * num = malloc(sizeof(int)); // sizeof(int) will return the size required by
 ```
 Same can also be used to allocate size for an array by multiplying the size of one item to the total number of items needed.
 The memory allocated by `malloc()` also needs to be freed to prevent *memory leaks* (memory that is reserved but is not in use). This is done using the `free()` function which takes the pointer to the allocated memory as argument to free up that allocated chunk of memory.
-[[11) Dynamic allocation]]
+[[11)Dynamicallocation]]
 
 ---
 # Valgrind
@@ -73,7 +73,7 @@ Memory is divided into multiple parts. An overview of these includes:
 - Machine Code - This is the part where the system's code and all the programs installed are kept.
 - Global variable - This is the part where global variables of a program are kept.
 - Heap - This is the part where heap memory starts from. This is the part of memory used for dynamic allocation and it grows downwards towards stack until it reaches stack memory.
-- Stack - This is the part where normal variable are stored (one with no dynamic allocation). This is at the bottom and grows upwards towards the heap memory until it reaches it. The functions create inside the program are also stored here and once a function completes running this memory gets freed up. [[8) Static]]
+- Stack - This is the part where normal variable are stored (one with no dynamic allocation). This is at the bottom and grows upwards towards the heap memory until it reaches it. The functions create inside the program are also stored here and once a function completes running this memory gets freed up. [[8)Static]]
 ---
 # Memory Overflow
 Memory overflow occurs when system runs out of memory to store variables or tries to store amount of data more than allocated memory. When this occurs for stack memory it's call an *Stack Overflow*, conversely if it occurs for heap memory it's called *Heap Overflow*. These are also called *Buffer Overflows*.

@@ -5,14 +5,14 @@ A *stack* stores values one above the other and has the order of *FILO (First In
 ---
 # Linked list
 This is a data structure that stores values like lists but each item of the list is inside a node containing the item and a pointer to another node containing the next item thus creating a link between nodes. The last node has a `NULL` pointer.
-[[15) Linked List]]
+[[15)LinkedList]]
 
 ---
 # Trees
 These are the data structures that link in the same way as linked lists but on node is connected to two or more nodes. The node from which this connection starts from is called the *root* of the tree and the nodes which do not lead to any more nodes are called *leaf nodes*. More importantly a node of a tree leads a link to the nodes that are not linked to the tree already i.e. a node cannot have more than one parent node (node leading to the current) otherwise it's not a tree because the structure will then become cyclic.
 ## Binary tree
 This is one of the most commonly used tree structures. In a binary tree a node can only have two child nodes. This creates a tree structure that's functionally is same as a binary search algorithm when traversing the structure for searching.
-[[14) Binary trees]]
+[[14)Binarytrees]]
 
 ---
 # Dictionaries

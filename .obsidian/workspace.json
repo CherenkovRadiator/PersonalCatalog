@@ -13,22 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/learnc/CS50C/0)Obsidian/4) Lecture 3.md",
+                "file": "0)Obsidian/PersonalCatalog.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4) Lecture 3"
-            }
-          },
-          {
-            "id": "3ce86072a68c4f1b",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "PersonalCatalog"
             }
           }
         ]
@@ -87,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5,
-    "collapsed": true
+    "width": 280.5
   },
   "right": {
     "id": "0621a8cf2b364af3",
@@ -149,10 +138,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/learnc/CS50C/0)Obsidian/4) Lecture 3.md"
+                "file": "0)Obsidian/PersonalCatalog.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 4) Lecture 3"
+              "title": "Outline of PersonalCatalog"
             }
           },
           {
@@ -161,8 +150,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -180,58 +169,58 @@
       "cmdr:Command palette: Open command palette": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "cmdr:Files: Show file explorer": true,
-      "cmdr:Quick switcher: Open quick switcher": true,
       "command-palette:Open command palette": true,
       "daily-notes:Open today's daily note": true,
-      "cmdr:Graph view: Open graph view": true,
-      "cmdr:Canvas: Create new canvas": true,
       "obsidian-git:Open Git source control": true,
       "cmdr:Git: Open source control view": false,
+      "cmdr:Quick switcher: Open quick switcher": true,
+      "cmdr:Graph view: Open graph view": true,
+      "cmdr:Canvas: Create new canvas": true,
+      "cmdr:Files: Show file explorer": true,
       "cmdr:Git: Open file on GitHub": false
     }
   },
-  "active": "31aec2d421905c98",
+  "active": "011a20d58f2d03a7",
   "lastOpenFiles": [
+    "Linux/Networking",
+    "Linux/Networking.md",
+    "Linux/0)Obsidian/0)Linux.md",
+    "Linux/0)Obsidian",
+    "Linux",
+    "0)Obsidian/PersonalCatalog.md",
+    "Aviation/Navigation/0)BasicNavigation.md",
+    "Programming/CS50/0)Obsidian/0)CS50.md",
+    "Programming/0)Obsidian/0)Programming.md",
+    "Programming/learnc/0)Obsidian/0)Learnc.md",
+    "Programming/learnBash/0)Obsidian/0)LearnBash.md",
+    "Programming/learnc/LearnCorg/0)Obsidian/0)LearnCOrg.md",
+    "Programming/learnc/LearnCorg/basic/0)Obsidian/0)Basic.md",
+    "Programming/learnc/LearnCorg/advanced/0)Obsidian/0)Advanced.md",
+    "Programming/learnc/CS50C/0)Obsidian/0)CS50C.md",
+    "Aviation/0)Obsidian/0)Aviation.md",
+    "Programming/CS50/0)Obsidian",
+    "Programming/learnBash/0)Obsidian",
+    "Programming/learnc/CS50C/0)Obsidian/6)Lecture5.md",
+    "Programming/learnc/CS50C/0)Obsidian/5)Lecture4.md",
+    "Programming/learnc/CS50C/0)Obsidian/4)Lecture3.md",
+    "Programming/learnc/CS50C/0)Obsidian/3)Lecture2.md",
+    "Programming/learnc/CS50C/0)Obsidian/2)Lecture1.md",
+    "Programming/learnc/CS50C/0)Obsidian/1)Lecture0.md",
+    "Programming/learnc/LearnCorg/advanced/0)Obsidian/14)Binarytrees.md",
+    "Programming/learnc/LearnCorg/advanced/0)Obsidian/15)LinkedList.md",
+    "Programming/learnc/LearnCorg/basic/0)Obsidian/1)Hello,world!.md",
+    "Programming/learnc/LearnCorg/basic/0)Obsidian/2)VariablesAndTypes.md",
+    "Programming/learnc/LearnCorg/advanced/0)Obsidian/9)Pointers.md",
+    "Programming/learnc/LearnCorg/advanced/0)Obsidian/10)Structures.md",
     "Programming/learnc/CS50C/CS50Personal/L3.c~",
     "Programming/learnc/CS50C/CS50Personal/L3",
     "Programming/learnc/CS50C/CS50Personal/L3.c",
-    "Programming/learnc/CS50C/0)Obsidian/3) Lecture 2.md",
     "Programming/learnc/CS50C/CS50Personal/L2.c~",
     "Programming/learnc/CS50C/CS50Personal/L1.c~",
     "Programming/learnc/CS50C/CS50Personal/L2",
-    "Programming/learnc/CS50C/CS50Personal/L2.c",
-    "Programming/CS50/7) Lecture 6.md",
-    "Programming/learnc/CS50C/0)Obsidian/2) Lecture 1.md",
-    "Programming/learnc/CS50C/CS50Personal/4913",
-    "Programming/learnc/CS50C/0)Obsidian/1) Lecture 0.md",
-    "Programming/learnc/LearnCorg/basic/0)Obsidian/8) Static.md",
-    "Programming/learnc/LearnCorg/basic/0)Obsidian/7) Functions.md",
-    "Programming/learnc/LearnCorg/basic/0)Obsidian/6) Loops.md",
-    "Programming/learnc/LearnCorg/basic/0)Obsidian/5) Strings.md",
-    "Programming/learnc/LearnCorg/basic/0)Obsidian/4) Conditions.md",
-    "Programming/learnc/LearnCorg/basic/0)Obsidian/3) Arrays.md",
-    "Programming/learnc/LearnCorg/basic/0)Obsidian/2) Variables and Types.md",
-    "Programming/learnc/LearnCorg/basic/0)Obsidian/1) Hello, world!.md",
-    "Programming/learnc/LearnCorg/basic/0)Obsidian/0) Basic.md",
-    "Programming/learnc/LearnCorg/basic/0)Obsidian",
-    "Programming/learnc/LearnCorg/advanced/0)Obsidian/9) Pointers.md",
-    "Programming/learnc/LearnCorg/advanced/0)Obsidian/16) Union.md",
-    "Programming/learnc/LearnCorg/advanced/0)Obsidian/15) Linked List.md",
-    "Programming/learnc/LearnCorg/advanced/0)Obsidian/14) Binary trees.md",
-    "Programming/learnc/LearnCorg/advanced/0)Obsidian/13) Recursion.md",
-    "Programming/learnc/LearnCorg/advanced/0)Obsidian/12) Arrays and Pointers.md",
-    "Programming/learnc/LearnCorg/advanced/0)Obsidian/11) Dynamic allocation.md",
-    "Programming/learnc/LearnCorg/advanced/0)Obsidian/10) Structures.md",
-    "Programming/learnc/LearnCorg/advanced/0)Obsidian/0) Advanced.md",
-    "Programming/learnc/LearnCorg/advanced/0)Obsidian",
-    "Programming/learnc/LearnCorg/0)Obsidian/0) LearnCOrg.md",
-    "Programming/learnc/LearnCorg/0)Obsidian",
-    "Programming/learnc/CS50C/0)Obsidian/6) Lecture 5.md",
-    "Programming/learnc/CS50C/0)Obsidian/5) Lecture 4.md",
-    "Aviation/0) Obsidian/1) Assets/EllipseShape.jpg",
-    "Aviation/0) Obsidian/1) Assets/OblateSpheroid.PNG",
-    "Aviation/0) Obsidian/1) Assets/Geoid.jpg",
+    "Aviation/0)Obsidian/1)Assets/EllipseShape.jpg",
+    "Aviation/0)Obsidian/1)Assets/OblateSpheroid.PNG",
+    "Aviation/0)Obsidian/1)Assets/Geoid.jpg",
     "Structure.canvas"
   ]
 }

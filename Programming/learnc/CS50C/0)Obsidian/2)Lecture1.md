@@ -11,7 +11,7 @@ int main(void)
 ```
 Here, `main()` is the function from which the program starts to run and `printf()` function prints out the given statement as output.
 In terminal `code hello.c` is used to create a new file in VScode, `make hello` to convert the C source code to machine language of 0's and 1's creating a file of same name but no extension and lastly `./hello` to run/execute that file. The `\n` in above string is an escape character that represents new line. An escape character is a character that defines a character that is not on a normal keyboard like new like, currency symbols, math symbols etc.
-[[1) Hello, world!]]
+[[1)Hello,world!]]
 
 ---
 # Header file
@@ -59,7 +59,7 @@ else
 | !=       | not equal to             |
 | <=       | less than or equal to    |
 | >=       | greater than or equal to |
-[[4) Conditions]]
+[[4)Conditions]]
 
 ---
 # Variables
@@ -101,7 +101,7 @@ How the data (0's and 1's) are interpreted and represented depend on the data ty
 | double                                                                 | for floats but has higher precision             | 64    |
 | long double                                                            | for floats but has higher precision than double | 128   |
 Note that here signed data types are the once that can have both positive and negative values in which case half of the bits are used for negatives and other half for positives out of the total range of bits. There are also unsigned data types of the same which only store positive values but can make use of all the bits for it allowing to represent higher numbers but only positives.
-[[2) Variables and Types]]
+[[2)VariablesAndTypes]]
 
 ---
 # Loops
@@ -132,7 +132,7 @@ do
 ```
 ## Loop Directives
 These include `break` and `continue`. When used the `break` will end the loop ignoring any code after it and `continue` will ignore any code after it start the next iteration of the loop.
-[[6) Loops]]
+[[6)Loops]]
 
 ---
 # Function definition
@@ -146,7 +146,7 @@ return_type function_name(arguments)
 ```
 Here *return_type* is the data type of the return value of the function (if nothing is returned it will be `void`) following which is the name of the function and then the arguments it will take in the parentheses. Inside the code block is the code that will be executed when the function is called and in the end the return statement which will return the value when the function completes executing. Any code after the return statement is not executed because return statement marks the end of a function.
 The first line of the function definition (`return_type function_name(arguments)`) is called ***function prototype***. Since most of the code is written in `main()` and function needs to be defined before it can be called we can use just the function prototype alone and place it before the `main()` function so we don't get error when the function is called inside of `main()` and the function will work as it is supposed to because when called the compiler will point to the actual function which has the code to be executed.
-[[7) Functions]]
+[[7)Functions]]
 
 ---
 # Comments

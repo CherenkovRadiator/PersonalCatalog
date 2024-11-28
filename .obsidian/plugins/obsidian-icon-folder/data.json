@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": "#9600ff",
     "recentlyUsedIcons": [
+      "🐧",
       "LiSchool2",
       "LiSchool",
       "LiBox",
-      "LiActivity",
-      "LiCompass"
+      "LiActivity"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -33,16 +33,18 @@
     "lucideIconPackType": "native",
     "debugMode": false
   },
-  "0) Obsidian": "LiActivity",
   "Programming": "LiCodepen",
   "Programming/learnc": "LiCpu",
   "Programming/learnBash": "LiBot",
-  "Programming/0) Obsidian": "LiActivity",
   "Programming/learnc/CS50C": "LiUniversity",
   "Programming/learnc/LearnCorg": "LiChrome",
   "Aviation": "✈",
   "Aviation/Navigation": "LiCompass",
-  "Aviation/0) Obsidian": "LiActivity",
-  "Aviation/0) Obsidian/1) Assets": "LiBox",
-  "Programming/CS50": "LiSchool2"
+  "Programming/CS50": "LiSchool2",
+  "Programming/0)Obsidian": "LiActivity",
+  "Aviation/0)Obsidian": "LiActivity",
+  "Aviation/0)Obsidian/1)Assets": "LiBox",
+  "0)Obsidian": "LiActivity",
+  "Linux": "🐧",
+  "Linux/0)Obsidian": "LiActivity"
 }
