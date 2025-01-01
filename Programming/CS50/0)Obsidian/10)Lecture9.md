@@ -60,25 +60,28 @@
 ### Building a Simple E-commerce Store
 
 - **The provided example demonstrates building a basic online store using Flask and SQL.** 
-- **Key concepts in the example `include:Displaying` a catalog of products from a database.** 
-- **Adding items to a shopping cart using sessions.** 
-- **Retrieving cart contents and displaying them to the user.** 
-- **Handling form submissions and data validation.** 
+- **Key concepts in the example include:**
+	- **Displaying a catalog of products from a database.** 
+	- **Adding items to a shopping cart using sessions.** 
+	- **Retrieving cart contents and displaying them to the user.** 
+	- **Handling form submissions and data validation.** 
 
 ### Implementing Search Functionality
 
 - **The example demonstrates building a simple search engine for IMDb data.** 
-- **Key concepts in the example `include:Retrieving` data from a database based on user search queries.** 
-- **Implementing wildcard searches using SQL LIKE operator.** 
-- **Displaying search results in a user-friendly format.** 
+- **Key concepts in the example include: **
+	- **Retrieving data from a database based on user search queries.** 
+	- **Implementing wildcard searches using SQL LIKE operator.** 
+	- **Displaying search results in a user-friendly format.** 
 
 ### Autocomplete and AJAX
 
 - **The example demonstrates implementing autocomplete functionality using AJAX.** 
-- **Key concepts in the example `include:Sending` asynchronous requests to the server as the user types.** 
-- **Dynamically updating the web page with search results without reloading.** 
-- **Using JavaScript to handle user input and server responses.** 
-
+- **Key concepts in the example include:**
+	- **Sending asynchronous requests to the server as the user types.** 
+	- **Dynamically updating the web page with search results without reloading.** 
+	- **Using JavaScript to handle user input and server responses.** 
+	- 
 ### APIs and JSON
 
 - **APIs (Application Programming Interfaces) provide standardized ways for software systems to communicate and exchange data.** They allow different applications to interact with each other.

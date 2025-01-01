@@ -29,3 +29,4 @@ These are databases that are used with specialized software that manages the dat
 - `GROUP BY` is used to perform actions based on groups of data of specified column
 - `ORDER BY` is used to order the data based on specified column. By default data is order in ascending order `ASC` but can be changed to descending order by specifying `DESC`.
 - `JOIN` is used to combine data of multiple table.
+---

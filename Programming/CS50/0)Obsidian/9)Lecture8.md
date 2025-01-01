@@ -1,31 +1,33 @@
 # Internet
----
 The Internet is the global system of interconnected computer networks that used the Internet Protocol Suit (TCP/IP) to communicate between networks and devices.
-# TCP/IP
+[[1)Internet]]
+
 ---
+# TCP/IP
 This is a set of protocols that internet uses to transfer data packets from point A to B. 
 - **IP**: IP stands for Internet Protocol which is a number in the format #.#.#.# (where each # represents a byte) which uniquely identifies a device on the internet. An IP datagram contains two IP addresses: source IP address and destination IP address,
 - **Sequence number**: These are the numbers which define the order in which the packets should be sent/received.
 - **Port**: These specific which program should open the packet being received.
-# Server
 ---
+# Server
 It is a computer on the internet just like any other that responds to queries to provide the requested information.
 - **DNS**: These are the servers who's purpose is to provide the IP address associated with a domain name.
 - **DHCP**: These are the servers that manage the distribution of IP addresses in a network.
-# HTTP and HTTPS
 ---
+# HTTP and HTTPS
 - **Hyper Text Transfer Protocol** is a protocol that standardizes the actual data inside a packet that a web browser receives.
 - Hyper Text Transfer Protocol Secure is the secure version of HTTP. It encrypts the data to make it more secure.
-# Parts of a URL
+[[0)Web]]
 ---
+# Parts of a URL
 - `https://` is the protocol being used to access the website.
 - `www` is called a host name. It used to be an indication for world wide web to let people know that they're accessing the web in it's early ages but this now is just a configuration detail and isn't required for URL.
 - `example.com` is the called domain name. It is the name of the website that uniquely identifies it on the internet.
 - `example.com/` is the root of the website.
 - `.com` is called top level domain. This allows people to buy a domain name under that top level domain. These are country code like `.uk`, `.us`, `.in` etc. or representative of an organization like `.com` for commercial, `.org` for organization etc.
 - `example.com/path` is the path to a file on the domain. This could be file or folder.
-# GET and POST
 ---
+# GET and POST
 GET and POST are two ways in which data is formatted and transmitted over the internet. GET is used to create requests to get certain information from a server like a website. POST is used to send information to a server like information filled in a form, image, file uploads etc.
 This type of request is included in HTTP header that contains the type of request and key value pairs with information regarding the packet.
 ```
@@ -40,9 +42,10 @@ Content-Type: text/html
 ...
 ```
 Above is an example of a response header that a server might send back, `HTTP/2` is the version of HTTP that it agreed to use, `200` is the status code of the response (`GOOD` in this case), `Content-Type: text/html` is the type of file being sent in the response of the request.
-# HTML
+
 ---
-HTML stands for Hyper-Text Markup Language. It is not a programming language but  a markup language that servers as basic structure for a website.
+# HTML
+HTML stands for Hyper-Text Markup Language. It is not a programming language but a markup language that servers as basic structure for a website.
 ## Boiler plate
 This is the basic structure of a website:
 ```html
@@ -138,7 +141,9 @@ This tag also takes ang argument called `alt` which is used to place an alternat
 	- input fields are created between the `form` tags using the `<input>` tag.
 	- `input` tag takes argument that equip it with various feature like `name` which allows the input to be passed as a key value pair, `autofocus` to automatically focus on the field etc.
 - Special entities can be used to insert special character using HTML. like: `&#169` for copyright symbol.
-- HTML5 has semantic tags that clearly define the purpose of the tag to the developer and the browser...
+- HTML5 has semantic tags that clearly define the purpose of the tag to the developer and the browser.
+[[0)HTML]]
+---
 # Regular Expression
 Regular expressions or regex are expression used to match data based on patterns.
 - `.`: any single character (except line terminators)
@@ -151,6 +156,7 @@ Regular expressions or regex are expression used to match data based on patterns
 - `[0-9]`: any one of the range of characters
 - `\d`: any digit
 - `\D`:  any character that is not a digit
+---
 # CSS
  CSS (Cascading Style Sheet) is used to add design and style to a webpage. There are multiple ways to incorporate CSS into the webpage, either as attributes to a tag itself or using `<style>` tag in the head of the file or as an external CSS file linked using `<link>` tag.
  - `div` tag is used to get a rectangular division of the page. This allows for addressing and applying style to an entire section and group of tags at once using cascading since tags like `<p>` can be put nested inside the `<div>` tag and have the styling applied to them.
@@ -175,9 +181,14 @@ body
 ```
 - Separate file for CSS can also be made using selectors to style and linked to the webpage using `<link hrep="link/path to the file" rel="stylesheet">` in the head of the webpage.
 - Tags can have unique ID's that can be addressed by CSS using `#` symbol to style them.
+[[0)CSS]]
+---
 # Frameworks
 There are third part frameworks like *bootstrap* that can be used to add style to the webpage using the CSS file and respective classes and IDs provided by the framework.
+
+---
 # JavaScript
+
 - JavaScript is a programming language that allows you to add interactivity and dynamic behavior to web pages
 -  JavaScript can manipulate the HTML DOM (Document Object Model), which is a tree-like representation of the web page structure in the browser's memory. This enables dynamic updates and modifications to the page content
 - Event listeners allow you to execute JavaScript code in response to specific events, such as clicking a button, submitting a form, or even changes in the user's location
@@ -191,3 +202,5 @@ There are third part frameworks like *bootstrap* that can be used to add style t
 - JavaScript can access browser features like geolocation, providing information about the user's location with their permission
 - Client-side validation using JavaScript and regular expressions can improve user experience by catching errors early, but it is not secure and should not be relied upon for sensitive data
 - Server-side validation is necessary to ensure data integrity and security.
+[[0)JavaScript]]
+---

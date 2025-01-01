@@ -1,0 +1,12 @@
+# Positioning
+- Type of positioning:
+	- *Static*: It is the default positioning of an element.
+	- *Relative*: It is the elements position relative to it static/default position.
+	- *Absolute*: It is the element's position relative to it's nearest positioned ancestor or top left corner of the webpage if there is no ancestor.
+	- *Fixed*: It is the element's position relative to the browser window i.e. no matter the where the edges of the webpage are, specified element will always stay in the specified position relative to the browser window.
+- *z-index*: Defines value of an element in z-axis i.e. which element goes on top or under other element. 
+	- Everything has a default z-index of 0.
+	- If value is set to 0 for an element with absolute positioning, it will not try to fit along side other elements but be above them.
+- Along side positioning values can be set from there each side using `top`, `right`, `bottom`, `left` and there combinations.
+	- Positions set using these values come outside of the margin of that element and are different altogether.
+---
