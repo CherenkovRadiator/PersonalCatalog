@@ -5,9 +5,12 @@ function fucntion_name(arg1, arg2...) {
 	return value; // Optional: return a value
 }
 ```
-- These function can also take parameters (`arg1`, `arg2` etc.) that will become inputs to the function when called (a.k.a. functions) which can be used inside the function as variables.
-- Functions in JavaScript are *First-Class object*.
+- These function can also take parameters (`arg1`, `arg2` etc.) that will become inputs to the function when called (a.k.a. arguments) which can be used inside the function as variables.
+- Functions in JavaScript are *First-Class object* meaning they can be stored and passed to other functions as variables.
+- Return values for a function can be defined using `reuturn` keyword.
 - There are multiple ways in which the functions are declared/used.
+---
+# Different types of functions
 1. Named Functions:
 	These are the most common type of function. They have a name and can be called by their name.
 ```js
@@ -84,3 +87,4 @@ doSomething(() => console.log("Callback executed!"));
 })(); 
 ```
 
+---
