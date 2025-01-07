@@ -1,8 +1,8 @@
 
-| Topic            | Description |
-| ---------------- | ----------- |
-| [[0)Web]]        |             |
-| [[0)HTML]]       |             |
-| [[0)CSS]]<br>    |             |
-| [[0)JavaScript]] |             |
+| Topic            | Description                            |
+| ---------------- | -------------------------------------- |
+| [[0)Web]]        | About Web in general                   |
+| [[0)HTML]]       | About HTML (HyperText Markup Language) |
+| [[0)CSS]]<br>    | About CSS (Cascading Style Sheet)      |
+| [[0)JavaScript]] | About JavaScript                       |
 
