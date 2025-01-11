@@ -6,19 +6,23 @@
 ---
 # Structure
 ## Internet
-All the infrastructure connected together like devices, router, servers etc. is collectively known as internet. Internet uses TCP/IP model to to transmit data.
+- All the infrastructure connected together like devices, router, servers etc. is collectively known as internet. Internet uses TCP/IP model to to transmit data.
+
 ## World Wide Web
 - World Wide Web is an information system that enables content sharing over the internet. This allows for the transfer of web resources to be accessed over the Internet according to specific rules of the Hyper Text Transfer Protocol (HTTP). 
 - It relies on the server-client model to share data where a server device "servers" or sends out it's stored data to the client who receives it.
 - *Servers* and *Clients* are simply devices connected to the internet, the terms simply define there function during an information exchange.
+
 ## Web Browser
-It is an application that allows access to the web and it's content in a user friendly manner.
+- It is an application that allows access to the web and it's content in a user friendly manner.
+
 ## IP address and Domain Name
 - Every device or network on the internet has an IP address. IP addresses are used to uniquely identify a device or a network on the internet. Thus each server and client have IP address that identify them on the internet. 
 - An IP address is in the form off `x.x.x.x` where `x` represents an 8-bit integer value.
 - Remembering these IP addresses for each website is inconvenient thus for convenience sake we use *Domain Names*.
 - Domain names are human readable names that are specific to server(s) serving content over the internet.
 - DNS (Domain Name Server) are used to convert these domain names in to IP addresses that web works on.
+
 ## Website
 - A domain name for a website points towards the root of the website. This root is simply a directory under which the contents of the website are stored.
 - Root is indicated by `/` after the URL of the website itself and followed is path to files under this root.
