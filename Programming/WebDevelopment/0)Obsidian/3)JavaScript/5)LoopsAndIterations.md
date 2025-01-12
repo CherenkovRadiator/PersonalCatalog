@@ -1,6 +1,7 @@
 # Loops
 - Loops allow for a piece of code to be executed iteratively.
 - There are different types of loops.
+
 ## [for statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for_statement)
 - A [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for) loop repeats until a specified condition evaluates to false.
 ```js
@@ -14,6 +15,7 @@ for (initialization; condition; afterthought) {
 	3. The `statement` executes. To execute multiple statements, use a [block statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block) (`{ }`) to group those statements.
 	4. If present, the update expression `afterthought` is executed.
 	5. Control returns to Step 2.
+
 ---
 ## [do...while statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#do...while_statement)
 
@@ -28,6 +30,7 @@ while (condition);
 
 - `statement` is always executed once before the condition is checked. (To execute multiple statements, use a block statement (`{ }`) to group those statements.)
 - If `condition` is `true`, the statement executes again. At the end of every execution, the condition is checked. When the condition is `false`, execution stops, and control passes to the statement following `do...while`.
+
 ---
 ## [while statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#while_statement)
 
@@ -41,6 +44,7 @@ while (condition)
 - If the `condition` becomes `false`, `statement` within the loop stops executing and control passes to the statement following the loop.
 - The condition test occurs _before_ `statement` in the loop is executed. If the condition returns `true`, `statement` is executed and the `condition` is tested again. If the condition returns `false`, execution stops, and control is passed to the statement following `while`.
 - To execute multiple statements, use a block statement (`{ }`) to group those statements.
+
 ---
 ## [labeled statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#labeled_statement)
 
@@ -53,6 +57,7 @@ label:
 ```
 
 - The value of `label` may be any JavaScript identifier that is not a reserved word. The `statement` that you identify with a label may be any statement. For examples of using labeled statements, see the examples of `break` and `continue` below.
+
 ---
 ## [for...in statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...in_statement)
 
@@ -71,6 +76,7 @@ for (variable in object)
 for (variable of iterable)
   statement
 ```
+
 ---
 # Extras
 ## [break statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#break_statement)
@@ -87,6 +93,7 @@ break label;
 
 1. The first form of the syntax terminates the innermost enclosing loop or `switch`.
 2. The second form of the syntax terminates the specified enclosing labeled statement.
+
 ---
 ## [continue statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#continue_statement)
 
@@ -99,4 +106,5 @@ break label;
 continue;
 continue label;
 ```
+
 ---

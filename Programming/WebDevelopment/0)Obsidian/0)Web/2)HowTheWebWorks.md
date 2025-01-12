@@ -118,7 +118,7 @@ PATCH
     ```json
     Content-Type: text/html
     ```
-    
+
 	- an empty line, consisting of a carriage return and a line feed;
 	- an optional [message body](https://en.wikipedia.org/wiki/HTTP_message_body "HTTP message body").
 

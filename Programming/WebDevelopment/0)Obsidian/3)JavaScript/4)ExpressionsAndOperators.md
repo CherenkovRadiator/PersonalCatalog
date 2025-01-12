@@ -3,6 +3,7 @@
 - There are two types of expressions: those that have side effects (such as assigning values) and those that purely _evaluate_.
 - All complex expressions are joined by *operators*
 - Some of these operators are:
+
 ## [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators#assignment_operators)
 
 | Name                                                                                                                                           | Shorthand operator | Meaning          |
@@ -399,4 +400,5 @@ The [`super` keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 super(args); // calls the parent constructor.
 super.functionOnParent(args);
 ```
+
 ---
