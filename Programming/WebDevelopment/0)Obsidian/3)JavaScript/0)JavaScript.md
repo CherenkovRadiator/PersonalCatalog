@@ -7,3 +7,5 @@
 | [[4)ExpressionsAndOperators]] | About expressions and different operators                    |
 | [[5)LoopsAndIterations]]      | Different types of loops (i.e. `for`, `while`, `do...while`) |
 | [[6)DocumentObjectModel]]     | How Document Object Model works                              |
+| [[7)NumbersAndOperators]]     | About number data type in JavaScript                         |
+| [[8)Strings]]                 | About string data type in JavaScript                         |

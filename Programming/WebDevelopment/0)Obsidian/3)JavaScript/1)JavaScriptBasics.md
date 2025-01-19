@@ -27,6 +27,7 @@ Here the function `alert` is used to create a pop-up with the string 'hello worl
 - Every line in JavaScript ends with a `;` which tells the compiler that a line has ended.
 - A *string* is the text that we want to be interpreted as normal English text rather than code. These can be specified with either single or double quotes.
 - `//` are used to place single line comments and `/**/` for multi line comments.
+
 ---
 # Data Type
 - JavaScript has multiple data type:
@@ -38,15 +39,18 @@ Here the function `alert` is used to create a pop-up with the string 'hello worl
 	- object: represents a collection of key-value pairs.
 	- Undefined: these are the variables that have been created but have nothing assigned. like `var variable;`
 - `typeof()` function can be used to get the type of a data.
+
 ---
-# Variables
+# [Variables](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Variables)
 - Variables are used to store data to be reused again and again just by using the name of the variable.
 - There are three ways to define a variable in JavaScript:
 	- `let`: using let keyword will define it in the scope of the curly braces it's in or file if none.
-	- `const`: this will define constant variables that cannot be changed.
 	- `var`: used in older versions of JavaScript to declare a variable with global scope (not recommended)
+	- `const`: As well as variables, you can declare constants. These are like variables, except that:
+		- you must initialize them when you declare them
+		- you can't assign them a new value after you've initialized them.
 - If none of these keywords are used then a global variable is created across all files (not recommended).
-## Naming conventions
+## [Naming conventions]()
 1. Variable
 	- **Camel Case:**
 	    - Start with a lowercase letter.
@@ -73,6 +77,83 @@ Here the function `alert` is used to create a pop-up with the string 'hello worl
 6. Consistency:
 	- **Within a Project:** Maintain consistent naming conventions throughout your entire project.
 	- **Team Standards:** If working in a team, adhere to the team's agreed-upon naming conventions.
+
+---
+# [Variable types](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Variables#variable_types)
+
+There are a few different types of data we can store in variables.
+
+## [Numbers](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Variables#numbers)
+
+- You can store numbers in variables, either whole numbers like 30 (also called integers) or decimal numbers like 2.456 (also called floats or floating point numbers). 
+- You don't need to declare variable types in JavaScript, unlike some other programming languages.
+- When you give a variable a number value, you don't include quotes:
+
+```js
+let myAge = 17;
+```
+
+## [Strings](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Variables#strings)
+
+- Strings are pieces of text. When you give a variable a string value, you need to wrap it in single or double quote marks; otherwise, JavaScript tries to interpret it as another variable name.
+
+```js
+let dolphinGoodbye = "So long and thanks for all the fish";
+```
+
+## [Booleans](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Variables#booleans)
+
+- Booleans are true/false values — they can have two values, `true` or `false`. These are generally used to test a condition, after which code is run as appropriate. 
+- So for example, a simple case would be:
+
+```js
+let iAmAlive = true;
+```
+
+- Whereas in reality it would be used more like this:
+
+```js
+let test = 6 < 3;
+```
+
+- This is using the "less than" operator (`<`) to test whether 6 is less than 3. As you might expect, it returns `false`, because 6 is not less than 3! You will learn a lot more about such operators later on in the course.
+
+## [Arrays](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Variables#arrays)
+
+- An array is a single object that contains multiple values enclosed in square brackets and separated by commas.
+- Try entering the following lines into console:
+
+```js
+let myNameArray = ["Chris", "Bob", "Jim"];
+let myNumberArray = [10, 15, 40];
+```
+
+- Once these arrays are defined, you can access each value by their location within the array. Try these lines:
+
+```js
+myNameArray[0]; // should return 'Chris'
+myNumberArray[2]; // should return 40
+```
+
+- The square brackets specify an index value corresponding to the position of the value you want returned. 
+- You might have noticed that arrays in JavaScript are zero-indexed: the first element is at index 0.
+
+## [Objects](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Variables#objects)
+
+- In programming, an object is a structure of code that models a real-life object. 
+- You can have an object that represents a box and contains information about its width, length, and height, or you could have an object that represents a person, and contains data about their name, height, weight, what language they speak, how to say hello to them, and more.
+- Try entering the following line into your console:
+
+```js
+let dog = { name: "Spot", breed: "Dalmatian" };
+```
+
+- To retrieve the information stored in the object, you can use the following syntax:
+
+```js
+dog.name;
+```
+
 ---
 # Strings
 - Strings can be concatenated (joined) together using `+` operator.
@@ -81,19 +162,5 @@ Here the function `alert` is used to create a pop-up with the string 'hello worl
 - Parts of a string can be extracted using the `slice()` function. It take the starting and ending index value of the part to be extracted from the string.
 - Casing for the strings can be changed to upper or lower case using the functions `toUpperCase()` and `toLoweCase()` respectively.  like `var upperName = "Anjleena".toUpperCase()`.
 - Variables can be put inside the strings using syntax `$(var)`.
----
-# Numbers
-- JavaScript allows for basic arithmetic to be performed on number. This is done using the operators like:
-	- `*` for multiplication
-	- `+` for addition
-	- `-` for subtraction
-	- `/` for division
-	- `%` to get the remainder when first operand is divided by the second
-	- `**` for exponentiation. first operand is raised to the power of second
-	- `++` for increment a number. unary operator. like `num++;`
-	- `-` Decrement, decreases the operand by one. There are two ways to do it:
-		- `num--` will return the `num` first and then decrease it.
-		- `--num` will decrease the `num` first and then return it.
-	- `+` unary plus, used to convert strings to number like `"12"+;`
-	- `-` unary negation, used to convert numbers to negative if not already, can also work with strings and convert them directly to negative.
+
 ---
