@@ -46,11 +46,18 @@ Here the function `alert` is used to create a pop-up with the string 'hello worl
 - There are three ways to define a variable in JavaScript:
 	- `let`: using let keyword will define it in the scope of the curly braces it's in or file if none.
 	- `var`: used in older versions of JavaScript to declare a variable with global scope (not recommended)
+<<<<<<< HEAD
 	- `const`: As well as variables, you can declare constants. These are like variables, except that:
 		- you must initialize them when you declare them
 		- you can't assign them a new value after you've initialized them.
 - If none of these keywords are used then a global variable is created across all files (not recommended).
 ## [Naming conventions]()
+=======
+- If none of these keywords are used then a global variable is created across all files (not recommended). The design of `var` is confusing and error-prone. So `let` was created in modern versions of JavaScript, a new keyword for creating variables that works somewhat differently to `var`, fixing its issues in the process.
+- Once you've declared a variable, you can initialize it with a value. You do this by typing the variable name, followed by an equals sign (`=`), followed by the value you want to give it.
+- 
+## Naming conventions
+>>>>>>> 387907c514d9b4dc20b127b2b4d17f0cca9be9ae
 1. Variable
 	- **Camel Case:**
 	    - Start with a lowercase letter.
@@ -162,5 +169,37 @@ dog.name;
 - Parts of a string can be extracted using the `slice()` function. It take the starting and ending index value of the part to be extracted from the string.
 - Casing for the strings can be changed to upper or lower case using the functions `toUpperCase()` and `toLoweCase()` respectively.  like `var upperName = "Anjleena".toUpperCase()`.
 - Variables can be put inside the strings using syntax `$(var)`.
+<<<<<<< HEAD
 
+=======
 ---
+## [Numbers](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Variables#numbers)
+- JavaScript allows for basic arithmetic to be performed on number. This is done using the operators like:
+	- `*` for multiplication
+	- `+` for addition
+	- `-` for subtraction
+	- `/` for division
+	- `%` to get the remainder when first operand is divided by the second
+	- `**` for exponentiation. first operand is raised to the power of second
+	- `++` for increment a number. unary operator. like `num++;`
+	- `-` Decrement, decreases the operand by one. There are two ways to do it:
+		- `num--` will return the `num` first and then decrease it.
+		- `--num` will decrease the `num` first and then return it.
+	- `+` unary plus, used to convert strings to number like `"12"+;`
+	- `-` unary negation, used to convert numbers to negative if not already, can also work with strings and convert them directly to negative.
+>>>>>>> 387907c514d9b4dc20b127b2b4d17f0cca9be9ae
+---
+### [Objects](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Variables#objects)
+
+- In programming, an object is a structure of code that models a real-life object. 
+- You can have an object that represents a box and contains information about its width, length, and height, or you could have an object that represents a person, and contains data about their name, height, weight, what language they speak, how to say hello to them, and more.
+
+```js
+let dog = { name: "Spot", breed: "Dalmatian" };
+```
+
+To retrieve the information stored in the object, you can use the following syntax:
+
+```js
+dog.name;
+```

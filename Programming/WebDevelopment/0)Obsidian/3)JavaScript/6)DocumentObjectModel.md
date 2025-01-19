@@ -83,3 +83,56 @@ clearText.addEventListener("click", () => {
 ```
 
 ---
+## [HTML DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#html_dom)
+
+- A document containing HTML is described using the [`Document`](https://developer.mozilla.org/en-US/docs/Web/API/Document) interface, which is extended by the HTML specification to include various HTML-specific features.
+- In particular, the [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) interface is enhanced to become [`HTMLElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) and various subclasses, each representing one of (or a family of closely related) elements.
+- The HTML DOM API provides access to various browser features such as tabs and windows, CSS styles and stylesheets, browser history, etc. 
+- See also: [HTML DOM API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API) documentation.
+
+## [SVG DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model#svg_dom)
+
+- Similarly, a document containing SVG is also described using the [`Document`](https://developer.mozilla.org/en-US/docs/Web/API/Document) interface, which is extended by the SVG specification to include various SVG-specific features. 
+- In particular, the [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) interface is enhanced to become [`SVGElement`](https://developer.mozilla.org/en-US/docs/Web/API/SVGElement) and various subclasses, each representing an element or a family of closely related elements.
+- See also: [SVG API](https://developer.mozilla.org/en-US/docs/Web/API/SVG_API) documentation.
+
+---
+## [What is a DOM tree?](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the_Document_Object_Model#what_is_a_dom_tree)
+
+- A **DOM tree** is a [tree structure](https://en.wikipedia.org/wiki/Tree_structure) whose nodes represent an HTML or XML document's contents. 
+- Each HTML or XML document has a DOM tree representation.
+
+---
+## [What does the Document API do?](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the_Document_Object_Model#what_does_the_document_api_do)
+
+- The Document API, also sometimes called the DOM API, allows you to modify a DOM tree in _any way you want_. 
+- It enables you to create any HTML or XML document from scratch or to change any contents of a given HTML or XML document.
+- Web page authors can edit the DOM of a document using JavaScript to access the `document` property of the global object.
+- This `document` object implements the [`Document`](https://developer.mozilla.org/en-US/docs/Web/API/Document) interface.
+
+---
+## [The NodeSelector interface](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Locating_DOM_elements_using_selectors#the_nodeselector_interface)
+
+- This specification adds two new methods to any objects implementing the [`Document`](https://developer.mozilla.org/en-US/docs/Web/API/Document), [`DocumentFragment`](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment), or [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) interfaces:
+
+### [`querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector "querySelector()")
+
+- Returns the first matching [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element) node within the node's subtree. If no matching node is found, `null` is returned.
+
+### [`querySelectorAll()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll "querySelectorAll()")
+
+- Returns a [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) containing all matching `Element` nodes within the node's subtree, or an empty `NodeList` if no matches are found.
+- **Note:** The [`NodeList`](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) returned by [`querySelectorAll()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll "querySelectorAll()") is not live, which means that changes in the DOM are not reflected in the collection. This is different from other DOM querying methods that return live node lists.
+See also: [`Element.querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector), [`Element.querySelectorAll()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll) methods.
+
+---
+## [Selectors](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Locating_DOM_elements_using_selectors#selectors)
+
+- The selector methods accept [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors) to determine what element or elements should be returned. This includes [selector lists](https://developer.mozilla.org/en-US/docs/Web/CSS/Selector_list) so you can group multiple selectors in a single query.
+- To protect the user's privacy, some [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) are not supported or behave differently. For example [`:visited`](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited) will return no matches and [`:link`](https://developer.mozilla.org/en-US/docs/Web/CSS/:link) is treated as [`:any-link`](https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link).
+- Only elements can be selected, so [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) are not supported.
+
+---
+[DOM Specification](https://dom.spec.whatwg.org/)
+
+---
