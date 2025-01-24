@@ -9,3 +9,6 @@
 | [[6)DocumentObjectModel]]     | How Document Object Model works                              |
 | [[7)NumbersAndOperators]]     | About number data type in JavaScript                         |
 | [[8)Strings]]                 | About string data type in JavaScript                         |
+| [[9)Arrays]]                  | About arrays data type in JavaScript                         |
+| [[10)Events]]                 | Basics of events in JavaScript                               |
+| [[11)Objects]]                | About JavaScript objects                                     |
