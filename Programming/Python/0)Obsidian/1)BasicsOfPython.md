@@ -7,22 +7,18 @@
 - Tripe quotes (`'''...'''`) are used to create doc strings.
 - Things can be printed out using `print()` function.
 - Code blocks in python are defined with the levels of indentation they have.
-
 ---
+
 # Variables
 - To create a variable in python assign a value to a variable name.
 - Syntax for creating variables is:
-
 ```python
 Var_name = "Value"
 ```
-
 - multiple variables can be assigned at once like:
-
 ```python
 name, lname, age = "harry", "swami", 18
 ```
-
 ---
 ## Data Types
 - Numeric data types: `int`, `float` and `complex`.
@@ -45,7 +41,6 @@ name, lname, age = "harry", "swami", 18
 	- `bytearray`
 	- `memoryview`
 - `type()` returns the type of a data and takes that piece of data as input. like:
-
 ```python
 name = "Anjleena"
 print(type(name)) # str
@@ -54,7 +49,6 @@ print(type(name)) # str
 ## Type Casting
 - Typing casting means converting one type of variable into different data type.
 - Python has built-in functions like `int()` to convert to integers, `str()` to convert to string, `float()` to convert to floating point values etc. Like:
-
 ```python
 number = "12"
 print(type(number)) # str
@@ -63,72 +57,10 @@ print(type(number)) # int
 number = float(number)
 print(type(number)) # float
 ```
-
 - When a string is converted into Boolean this way using `bool()`, if the string is empty the function will return `False` otherwise `True`.
 - Not every data type can be converted into every other data type.
-
 ---
-# User input
-- Python has a built-in functionality to take user input using `input()` function.
-- It prompts the user running the program to enter something.
-- Anything given to it is taken in string. Type casting can be done along with it to convert string into any other data type like integer or float.
-- It also takes a string as an argument to print out at the prompt before the user enters anything.
 
----
-# Arithmetic & Math
-- The Arithmetic operators in python are:
-	- `+` for addition
-	- `-` for subtraction
-	- `*` for multiplication
-	- `/` for division (answer in float)
-	- `//`  for division (answer in integer)
-	- `**` for exponentiation
-- All of these can also be combined with `'='` to perform assignment at the same time. Like `a += b` is same as `a = a + b`.
-- Math functions in python:
-	- `round()`: rounds off the values passed to it.
-	- `abs()`: returns the absolute value for the integer passed.
-	- `min()`: returns the minimum of the numbers passed.
-	- `max()`: returns the maximum of the numbers passed.
-- More math related functions can be used with the help of `math` library like:
-	- `math.pi`: gives value of pi
-	- `math.e`: give value of Euler's number
-	- `math.sqrt()`: returns the square root of the number passed
-	- `math.ceil()`: returns the number rounded off to it's upper bound like 9.1 to 10.
-	- `math.floor()`: returns the number rounded off to it's lower bound like 9.9 to 9.
-
----
-# Flow control
-- Syntax for if-else statements is:
-
-```python
-if condition:
-	# code
-elif conditon:
-	# code
-else:
-	 # code
-```
-
-- The code blocks get defined through the indentation the code lies in.
-
----
-# Logical operators
-- There are three main logical operators in python :
-	- `or`: returns true if either of the values is true
-	- `and`: return true if both the values are true
-	- `not`: turns true in to false and vise versa
-
-# Conditional expression
-- This is a short hand form for simple if-else statements:
-- The syntax is:
-
-```python
-expression1 if conditon else expression2
-```
-
-- Here if the `condition` results in `True` then `expression1` is evaluated and returned other `expression2` is evaluated and returned.
-
----
 # Strings
 
 ## String Methods
@@ -155,18 +87,15 @@ expression1 if conditon else expression2
 strin = "abcdefghij"
 print(strin[2:7:2]) # ceg
 ```
-
 ---
 ## Formatted Strings and String Specifiers
 - Formatted strings are created by putting an `f` before the string.
 - This allows for strings to be formatted i.e. contain other values or expressions inside them using curly braces like:
-
 ```python
 name, age = "harry", 18
 s = f"The name of this person is {name} and the age is {age}"
 print(s) # The name of this person is harry and the age is 18
 ```
-
 - Formatted strings have *format specifiers* which are the *flags* that allow for the values inside the curly braces to be formatted differently.
 - The syntax for using these flags is `f"the string is {value:flag}"`
 - Some of the flags are:
@@ -181,36 +110,115 @@ print(s) # The name of this person is harry and the age is 18
 	- `: `: adds space before the value is positive
 	- `:,`: adds comma for each 1000th place like `1,000,000`
 - These fags can be combined together as well for each format.
+---
 
+# Arithmetic & Math
+- The Arithmetic operators in python are:
+	- `+` for addition
+	- `-` for subtraction
+	- `*` for multiplication
+	- `/` for division (answer in float)
+	- `//`  for division (answer in integer)
+	- `**` for exponentiation
+- All of these can also be combined with `'='` to perform assignment at the same time. Like `a += b` is same as `a = a + b`.
+- Math functions in python:
+	- `round()`: rounds off the values passed to it.
+	- `abs()`: returns the absolute value for the integer passed.
+	- `min()`: returns the minimum of the numbers passed.
+	- `max()`: returns the maximum of the numbers passed.
+- More math related functions can be used with the help of `math` library like:
+	- `math.pi`: gives value of pi
+	- `math.e`: give value of Euler's number
+	- `math.sqrt()`: returns the square root of the number passed
+	- `math.ceil()`: returns the number rounded off to it's upper bound like 9.1 to 10.
+	- `math.floor()`: returns the number rounded off to it's lower bound like 9.9 to 9.
+---
+
+# Collection data type
+- These are the data types with single variables used to store multiple items.
+- All of these collection data types can be nested directly into each other except for sets which cannot have other sets nested but can have frozensets.
+- These are:
+
+## List
+- List is an ordered and mutable array of items. 
+- It can also contain duplicates.
+- It is defined inside square brackets like: `["harry", 18, "harry"]`
+## Set
+- Sets are like lists as well but items themselves cannot be changed or replaced but only added or removed.
+- These are unordered.
+- They are defined inside curly braces like: `{"harry", 18, "Cicila"}`
+## Tuple
+- Tuples are like lists as well but are immutable meaning they cannot be changed at all.
+- It can contain duplicates.
+- It is faster than lists
+- They are defined inside parentheses like: `("harry", 12, "harry")` 
+## Dictionary
+- Dictionaries are enclosed inside curl braces and contain key value pairs as items. Like: `{"key1": "value1", "key2": "value2", "key3": "value3"}` 
+- They are ordered and mutable but cannot contain duplicate items.
+- Since the keys are unique they can be used to access the corresponding values from the dictionary like: `dic["key2"] # value2` and same to update values or create new key-value pairs.
+- Some of it's methods include:
+	- `.keys()`: returns the keys of a dictionary
+	- `.values()`: return the values of a dictionary.
+	- `.items()`: returns each key-value pair. The pair can then be unpacked using multiple assignment like: `var1, var2 = dic.items()` where `dic` only has one item thus return only one key-value pair
+- To iterate over a dictionary it's `.items()` method is used like:
+```python
+for key, value in dic.itmes():
+	print(f"{key} = {value}")
+```
+---
+
+# User input
+- Python has a built-in functionality to take user input using `input()` function.
+- It prompts the user running the program to enter something.
+- Anything given to it is taken in string. Type casting can be done along with it to convert string into any other data type like integer or float.
+- It also takes a string as an argument to print out at the prompt before the user enters anything.
+---
+
+# Flow control
+- Syntax for if-else statements is:
+```python
+if condition:
+	# code
+elif conditon:
+	# code
+else:
+	 # code
+```
+- The code blocks get defined through the indentation the code lies in.
+---
+## Logical operators
+- There are three main logical operators in python :
+	- `or`: returns true if either of the values is true
+	- `and`: return true if both the values are true
+	- `not`: turns true in to false and vise versa
+---
 # Loops
 - There are two main types of loops in python which are:
 
 ## While loop
 - The syntax for while loop is:
-
 ```python
 while condition:
 	# code
 ```
 
 ## For loop
+- Loops in python can also be nested.
 - The syntax for for loop is:
-
 ```python
 for var in iterable:
 	# code
 ```
-
 - For loops in python are used with iterables like `range()`, string, sequence etc.
 - `range()` function can take three arguments: string point, ending point and step value.
 - When the for loop run the value of the `var` is changed with each value of iterable with each iteration.
-
 ---
-- Loops in python can also be nested.
 
+# Conditional expression
+- This is a short hand form for simple if-else statements:
+- The syntax is:
+```python
+expression1 if conditon else expression2
+```
+- Here if the `condition` results in `True` then `expression1` is evaluated and returned other `expression2` is evaluated and returned.
 ---
-# Collection data type
-- These are the data types with single variables used to store multiple items.
-- These are:
-	- `list`: It is an ordered and mutable array of items. It can also contain delicacy. It is defined inside square brackets like: `["harry", 18, "angleena", "harry"]`
-	- `Set`: 
