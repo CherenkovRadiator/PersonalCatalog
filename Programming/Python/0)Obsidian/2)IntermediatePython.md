@@ -74,6 +74,7 @@ lis = [x*2 for x in range(1,11)] # [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 lis = [x*2 for x in range(1,11) if x%2==0]
 ```
 ---
+
 # Match Cases (Switch)
 - The syntax for switch statements in python is:
 ```python
@@ -89,3 +90,165 @@ match expression1:
 - Here whenever the value in `match` statement matches a value in any of the following `case` statements the code of that block is executed.
 - If none of the values match then the code in `_` case statement is executed.
 ---
+
+# Modules
+- Any python file is called a module.
+- A module can be imported (included) in any other module or any specific function or variables of it.
+- There are multiple ways to import that are:
+	- Importing whole module and then using parts of it:
+	```python
+	import module_name
+	module_name.function_name()
+	```
+	- Importing the whole module with and alias:
+	```python
+	import module_name as mn
+	mn.function_name()
+	```
+	- Importing specific part of  a module:
+	```python
+	from module_name import function_name
+	function_name()
+	```
+	Multiple can be imported the same way using comma between the names of the functions.
+	- Import all the parts of the module:
+	```python
+	from module_name import *
+	function_name()
+	```
+	This eliminates the need to call any function with name of the module or alias but directly. But it can result in the conflicts with the function or names in the current program with those in the module being imported.
+- These modules are the ones that come with python by default, the ones that are downloaded using `pip` or the ones created by yourself in which case the module must be either in the same directory or the full path relative to current file must be specified.
+---
+
+# Scope
+- The scoping scheme in python is: 
+	`Local > Enclosed > Global > Built-in`
+- ***Local Scope***:  is the scope of the function or the loop the variable is defined in i.e. the variable is only visible inside the function or loop it is defined in.
+- ***Enclosed Scope***: is the scope of enclosure in which the local scope exists i.e. if there are two nested functions or loop then the variables defined in the outermost function or loop will be visible to all the function and loops nested within it but the variables created in the nested loops and function will not be visible to the parent loop or function.
+- ***Global Scope***: It is the scope of the entire program i.e. the variables created in the program will be visible to the entire program.
+- ***Built-in***: It is the scope of the modules imported to the program i.e. the variables created in the modules imported will be visible throughout the program.
+- The priority of the variables is same as well i.e. **Global** variable will be taken over **Built-in**, **Enclosed** will be taken over **Global** and **Local** variables will be taken over **Enclosed**.
+---
+
+# `__name__` == "\_\_main\_\_"
+- `__name__` is a python's built-in attribute that hold's the name of the module/script it's being used in.
+- If `__name__` is equal to `"__main__"` then the attribute is being called in the module/script being executed it self otherwise it will hold the name of the script it is being called in as it's value.
+- It is used to make sure that a block of code only runs when the module/script itself is being run and not when the module/script is being imported into any other module/script.
+- For example:
+Script1:
+```python
+def main1():
+	print(f"This is {__name__}")
+
+if __name__ = "__main__":
+	main1()
+```
+Script2:
+```python
+import Script1
+
+def main2():
+	print(f"This is {__name__}")
+
+if __name__ = "__main__":
+	main2()
+
+Script1.main1()
+```
+Case 1, when Script1 is executed:
+```
+This is __main__
+```
+Case 2, when Script2 is executed:
+```
+This is __main__
+This is Script1
+```
+Case 3, when Script2 is executed if Script1 didn't have the if statement:
+```
+This is Script1
+This is __main__
+This is Script1
+```
+- i.e. during import the code in the module being imported is also executed thus `__name__` gives a way to write code in the modules and allow that code to be executed only when that module itself if being executed and prevent the code from being executed if that modules is being imported to any other module.
+---
+
+# Classes and Objects
+- **Classes** are constructors that define a structure i.e. attributes and methods (functions) that instances of that class will have.
+- An instance of a class is called **object**.
+- The syntax for creating a class:
+```python
+class nameOfClass:
+	def __inti__(self, attribute1, attribute2):
+		self.attribute1 = attribute1
+		self.attribute2 = attribute2
+
+	def methodName(self):
+		# Code
+		return 0
+```
+ - This will create class names `nameOfClass`.
+ - Here the first function created with `__inti__` is called the constructor function and is used to define the attributes of the class that will be associated to the object that will be created using the class. The arguments defined in this function are the ones that will be passed to the object upon it's creation.
+ - `self` in a class definition refers to the instance of the class (the object of the class). It is passed as the first argument to every function defined in the class definition and when those functions are called the python passes the object as `self` on it's own.
+- The syntax to create objects of a class:
+```python
+def nameOfClass:...
+
+obj = nameOfClass(attr1, attr2)
+```
+- Here `obj` is the object of class `nameOfClass`. `nameOfClass()` is the constructor function created inside the class and has the same arguments (which are used for creating attributes) 
+- Accessing the object's attributes and methods:
+```python
+objA1 = obj.attribute1
+objA2 = obj.attribute2
+
+obj.methodName()
+```
+- The methods and attributes related to the object are accessed using the dot notion (using `.` operator).
+- Multiple instances of a class can be created with there one separate attributes. The all will2 have the same methods and types of attributes associated to them but different values for each.
+
+## Class variables
+- These are the variables that are defined outside of the constructor.
+- It is acts as an attribute for each instances of that class (i.e. it is accessed the same way as any other attribute of that instance) but is same for all the instances of that class as defined in the class definition. Like:
+```python
+class nameOfClass:
+    var = "some values"
+
+    self __inti__(self, attribute):
+        self.attribute = attribute
+
+obj = nameOfClass(attr)
+obj.attribute # attr
+obj.var # "some values"
+
+obj2 = nameOfClass(attr2)
+obj.attribute # attr2
+obj.var # "some values"
+```
+- Here both the objects `obj` and `obj2` have there own unique attributes `attr` and `attr2` respectively but the class variable `var` is exists for both and is same `"some values"`.
+
+## Inheritance
+- Classes in python have the ability to incorporate structure of other classes in them (i.e. their attributes and methods) this is calles **Inheritance**. For example:
+```python
+class animal:
+    def __inti__(self, name, life):
+        self.name = name
+        self.life = life
+
+    def aboutAni(self):
+        print(f"The animal's name is {self.name}")
+
+class prey(animal):
+    def aboutPrey(self):
+        print(f"This animal is a preyer!")
+
+class predator(animal):
+    def aboutPredatro:
+        print("This animel is a predator!")
+```
+- Here the classes `prey` and `predator` also have the methods and attributes of the class `animal`.
+- When a objects is created from any of the classes it will *inherit* the attributes the methods and attributes of the parent class as well.
+- If the object is created from a class and the class has a constructor of its own the object will only take the attributes defined in this class and not the parent class same goes for the functions that have the same name in both the classes.
+- A class can also have multiple Inheritance i.e. multiple parent classes.
+- And if a classes's parent has a parent class of it's own then the class will take the methods and attributes of both the parents. This is called ***multilevel Inheritance***.
+
