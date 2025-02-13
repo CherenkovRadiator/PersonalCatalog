@@ -252,3 +252,55 @@ class predator(animal):
 - A class can also have multiple Inheritance i.e. multiple parent classes.
 - And if a classes's parent has a parent class of it's own then the class will take the methods and attributes of both the parents. This is called ***multilevel Inheritance***.
 
+## `super()`
+- When class is created if the class has a constructor of it's own then the constructor of it's super (parent) class will be ignored.
+- `super()` function is used to acccess constructor or methods of a super class.
+- The functions returns a referrenc to the super class which then can be used to access it's methods including the constructor method. Like:
+```python
+class animal:
+    def __inti__(self, name, life):
+        self.name = name
+        self.life = life
+    
+    def describe():
+        print("This an animal")
+class prey(animal):
+    def __inti__(self, name, life, feature):
+        super().__inti__(name, life)
+        self.feature = feature
+    
+    def describe_prey():
+        super.describe()
+        print("And this animal is a prey")
+```
+- Here, `super()` allows `prey` class to access constructor method of the super class `animal` making it to be similar to having it's own attributes set as well as access to `describe()` method.
+
+## Polymorphism
+- Polymorphism means "many forms". In object Oriented Programming refers to the ability of objects of different classes to respond to same method call. Like:
+```python
+from abc import ABC, abstractmethod
+
+class animal:
+    def __init__(self, name):
+        self.name = name
+    @abstractmethod    
+    def nameIt(self):
+        print(f"my name is {self.name}")
+
+class dog(animal):
+    def nameIt(self):
+        print(f"This dogs name is {self.name}")
+
+class cat:
+    def nameIt(self):
+        print(f"This cats name is {self.name}")
+
+dg = dog("Dawg")
+ct = cat("Claws")
+
+dg.nameIt()
+ct.nameIt()
+```
+- Here, all three classes `animal`, `dog` and `cat` have a same method `nameIt`. This is Polymorphism.
+- When creating polymorphous methods they must be created as **abstract methods** and it is done by using `@abstractmethod` decorator.
+
